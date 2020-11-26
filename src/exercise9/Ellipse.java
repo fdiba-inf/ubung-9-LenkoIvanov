@@ -29,7 +29,7 @@ public boolean isValid(){
 
 public void initialise(){
   System.out.println("Start point: ");
-  startPoint.initialise();
+  startPoint.initialize();
   System.out.println("Enter a: ");
   this.a = Utils.INPUT.nextDouble();  //this added later
   System.out.println("Enter b: ");
