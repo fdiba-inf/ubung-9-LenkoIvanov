@@ -18,7 +18,7 @@ public Ellipse (Point startPoint, double a, double b){
 }
 
 public Ellipse(Ellipse otherEllipse){
-  this.startPoint = new Point(otherEllipse.startPoint); //this later added
+  this.startPoint = new Point(otherEllipse.startPoint);
   this.a = otherEllipse.a;
   this.b = otherEllipse.b;
 }
@@ -45,11 +45,11 @@ public double calculateArea(){
 }
 
 public String getType(){
-  return (Utils.equals(a,b)) ? "Circle" : "Ellipse"; 
+  return (Utils.equals(a,b)) ? "Cycle" : "Ellipse"; 
 }
 
 public String toString(){
-  return String.format("%s - [%s, %s], %s, P=%s, A=%s", startPoint,
+  return String.format("%s-[%s, %s], %s, P=%s, A=%s", startPoint,
   a, b, getType(), calculatePerimeter(), calculateArea());
 }
 
